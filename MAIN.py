@@ -5,7 +5,9 @@ pygame.init()
 screen_width = 1200
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
+#Your word here
 title=pygame.display.set_caption('FOR MY LOVE!!!!!')
+
 pink = (255, 182, 193)
 white = (255, 255, 255)
 snowflake_color = (255, 255, 255)
@@ -50,8 +52,8 @@ def main():
     while running:
         screen.fill(pink)
         draw_heart(screen,(255,0,0))
-        draw_text("I LOVE YOU SO MUCHHH!!!!",font,(white),200,250)
-        draw_text("Made by Funez",fonts,(0,0,0),900,500)
+        draw_text("I LOVE YOU SO MUCHHH!!!!",font,(white),200,250) # Change if u want
+        draw_text("Made by Funez",fonts,(0,0,0),900,500) # U can delete it
         for snowflake in snowflakes:
             snowflake.fall()
             snowflake.draw(screen)
